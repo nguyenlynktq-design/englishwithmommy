@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English with Mommy - Script Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --primary-bg: #fdfcf0;
+        --accent-yellow: #ffde59;
+        --accent-pink: #ff91a4;
+        --accent-blue: #7ed9ff;
+      }
+      body { 
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: var(--primary-bg);
+        background-image: radial-gradient(#ffeaa7 0.8px, transparent 0.8px);
+        background-size: 24px 24px;
+      }
+      .font-playful { font-family: 'Quicksand', sans-serif; }
+      
+      .child-card {
+        background: white;
+        border-radius: 3rem;
+        border: 4px solid #fff;
+        box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
+      .child-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.08);
+      }
+
+      .bubble-mother {
+        background: #fff;
+        border: 3px solid #ff91a4;
+        border-radius: 2rem 2rem 2rem 0.5rem;
+      }
+
+      .bubble-child {
+        background: #7ed9ff;
+        color: #0c4a6e;
+        border-radius: 2rem 2rem 0.5rem 2rem;
+      }
+
+      .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+      .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+      .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.1); border-radius: 10px; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
